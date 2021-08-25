@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+:root{
+    --clr-white: #ffffff;
+    --clr-dark: #2b2b2b;
+    --clr-gold: rgb(255, 210, 15);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Oswald", sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p{
+    font-size: large;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    z-index: -2;
+}
+
+.header-pic{
+    opacity: 0.5;
+}
+
+
+
+/*
+.logo-style{
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    fill: none;
+}
+
+*/
+
+
+
+
+/*                     NAV SECTION                    */
+
+/*
+
+.nav__list{
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__list a{
+    
+    color: var(--clr-white);
+}
+
+.nav__item{
+    margin: 5px;
+}
+
+.footer__class {
+    background-color: var(--clr-dark);
+    color: var(--clr-white);
+    text-align: center;
+    justify-content: center;
+    
+  }
+
+.about__me {
+  margin: 1em 2em;
+  max-width: 40em;
+}
+
+
+*/
+
+
+/*                    MAIN                          */
+
+.spacing{
+    margin: 100em;
+    padding: 1em;
+}
+
+main{
+    background: var(--clr-white);
+
+}
+
+.sectionStyle{
+    margin: 1em 3em;
+    padding: 1em;
+    border: solid rgba(0,0,0,0.02);
+    border-radius: 1em;
+    max-width: 40em;
+}
+
+.sectionStyle h2{
+    margin-bottom: 0.5em;
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 700px) {
+    .sectionStyle{
+        margin: 1em auto;;
+    }
+    
+}
+
+
+/*                      FOOTER                      */
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--clr-dark);
+    height: auto;
+    width: 100vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 40px;
+    color: var(--clr-white);
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 0rem;
+    margin-bottom: 0.5em;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: var(--clr-white);
+
+}
+
+.socials a i{
+    font-size: 2rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: var(--clr-gold);
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    position: ;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+
