@@ -3,7 +3,7 @@
 :root{
     --clr-white: #ffffff;
     --clr-dark: #2b2b2b;
-    --clr-gold: rgb(255, 210, 15);
+    --clr-gold: rgb(255, 210, 10);
 
 }
 
@@ -14,9 +14,26 @@
 
 }
 
+body, html{
+    height: 100%;
+}
+
+.parallax{
+
+    background-image: url('img/cover.jpg');
+
+    max-height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body{
     font-family: "Oswald", sans-serif;
 }
+
 
 
 *,
@@ -33,70 +50,37 @@ img{
     max-width: 100%;
 }
 
+
+
 header{
 
     position: relative;
     height: 4rem;
     width: 100%;
     z-index: -2;
-}
-
-.header-pic{
-    opacity: 0.5;
+    background-color: var(--clr-dark);
 }
 
 
-
-/*
 .logo-style{
-    align-items: center;
-    height: 4rem;
-    width: 100%;
-    fill: none;
+    height: 3rem;
+    width: 3rem;
+    margin: .5rem;
 }
 
-*/
-
-
-
-
-/*                     NAV SECTION                    */
-
-/*
-
-.nav__list{
-
-    list-style: none;
+.header-content{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-}
-
-.nav__list a{
-    
-    color: var(--clr-white);
-}
-
-.nav__item{
-    margin: 5px;
-}
-
-.footer__class {
-    background-color: var(--clr-dark);
-    color: var(--clr-white);
-    text-align: center;
     justify-content: center;
-    
-  }
-
-.about__me {
-  margin: 1em 2em;
-  max-width: 40em;
+    text-align: center;
 }
 
+.header-content h2{
+    color: var(--clr-white);
+    font-weight: 50;
+}
 
-*/
 
 
 /*                    MAIN                          */
@@ -106,17 +90,22 @@ header{
     padding: 1em;
 }
 
-main{
-    background: var(--clr-white);
-
-}
 
 .sectionStyle{
     margin: 1em 3em;
     padding: 1em;
-    border: solid rgba(0,0,0,0.02);
+    border: solid rgba(0,0,0,0.08);
     border-radius: 1em;
     max-width: 40em;
+}
+
+.section-sc-style{
+
+    margin: 1em 3em;
+    padding: 1em;
+    max-width: 40em;
+    align-items: center;
+    justify-content: center;
 }
 
 .sectionStyle h2{
@@ -126,10 +115,20 @@ main{
 }
 
 @media screen and (min-width: 700px) {
-    .sectionStyle{
+    .sectionStyle,
+    .section-sc-style
+    {
         margin: 1em auto;;
     }
     
+}
+
+.button-style{
+    background-color: var(--clr-gold);
+    font-size: 1.3rem;
+    padding: 2px 4px;
+    font-weight: 200%;
+    border-radius: 20%;
 }
 
 
