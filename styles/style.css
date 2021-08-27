@@ -3,7 +3,8 @@
 :root{
     --clr-white: #ffffff;
     --clr-dark: #2b2b2b;
-    --clr-gold: rgb(255, 210, 10);
+    --clr-gold: rgb(255, 210, 0);
+    --clr-transparant: rgba(255,255,255,0);
 
 }
 
@@ -60,7 +61,7 @@ header{
     height: 4rem;
     width: 100%;
     z-index: -2;
-    background-color: var(--clr-dark);
+    background-image: linear-gradient(var(--clr-dark), var(--clr-dark), var(--clr-gold));
 }
 
 
@@ -96,9 +97,12 @@ header{
 .sectionStyle{
     margin: 1em 3em;
     padding: 1em;
-    border: solid rgba(0,0,0,0.08);
+    border: solid rgba(250,250,250, 0.5);
     border-radius: 1em;
     max-width: 40em;
+
+    /* prop: horizontal vertical blur color */
+    box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.1);
 }
 
 .section-sc-style{
@@ -126,7 +130,7 @@ header{
 }
 
 .button-style{
-    background-color: var(--clr-gold);
+    background-image: linear-gradient(rgba(0,0,0,0) 40%, var(--clr-gold));
     font-size: 1.3rem;
     padding: 2px 4px;
     font-weight: 200%;
@@ -141,7 +145,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--clr-dark);
+    background-image: linear-gradient(var(--clr-transparant), var(--clr-dark) 99%);
     height: auto;
     width: 100vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -159,10 +163,11 @@ footer{
 
 .footer-content h3{
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 450;
     text-transform: capitalize;
     line-height: 0rem;
     margin-bottom: 0.5em;
+    color: var(--clr-dark);
 }
 
 .footer-content p{
@@ -200,13 +205,13 @@ footer{
 .footer-bottom{
     background: #000;
     width: 100vw;
-    padding: 20px 0;
+    padding: 10px 0;
     position: center;
     text-align: center;
 }
 
 .footer-bottom p{
-    font-size: 14px;
+    font-size: 15px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
