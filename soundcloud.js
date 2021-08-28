@@ -12,3 +12,28 @@ function play(){
 function pause(){
     widget1.pause();
 }
+
+var a = true;
+
+function border()
+{
+
+  if (a)
+  {
+    
+    a = false;
+    document.getElementById("sectionColor").style.boxShadow = "-2px 2px 7px rgba(0,0,0,0.1)";
+    document.getElementById("sectionColor2").style.boxShadow = "-2px 2px 7px rgba(0,0,0,0.1)";
+    document.getElementById("sectionColor3").style.boxShadow = "-2px 2px 7px rgba(0,0,0,0.1)";
+    document.getElementById("sectionColor4").style.boxShadow = "-2px 2px 7px rgba(0,0,0,0.1)";
+  }
+  else {
+    
+    a = true;
+    document.getElementById("sectionColor").style.boxShadow = "-2px 2px 7px white";
+    document.getElementById("sectionColor2").style.boxShadow = "-2px 2px 7px white";
+    document.getElementById("sectionColor3").style.boxShadow = "-2px 2px 7px white";
+    document.getElementById("sectionColor4").style.boxShadow = "-2px 2px 7px white";
+  }
+
+}
